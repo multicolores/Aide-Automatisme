@@ -42,7 +42,7 @@ const Bio = () => {
         quality={95}
         alt="Profile picture"
       />
-      {author?.name && (
+      {/* {author?.name && (
         <p>
           Written by <strong>{author.name}</strong> {author?.summary || null}
           {` `}
@@ -50,7 +50,7 @@ const Bio = () => {
             You should follow them on Twitter
           </a>
         </p>
-      )}
+      )} */}
     </div>
   )
 }

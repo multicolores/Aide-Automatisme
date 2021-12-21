@@ -1,0 +1,39 @@
+.blog_container {
+  padding: 0 20vw;
+
+  h1 {
+    font-size: 13em;
+    font-weight: bold;
+  }
+  .big_image_container {
+    height: 50vh;
+    .image {
+      height: 100%;
+    }
+  }
+
+  .article_description {
+    padding: 5vh 0;
+    h2 {
+      font-weight: bold;
+      padding: 10px 0;
+    }
+    span {
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      color: #babbbe;
+    }
+    p {
+      padding: 10px 0;
+    }
+  }
+}
+
+.blogPost_container {
+  padding: 0 20vw;
+  h1 {
+    padding-top: 20vh;
+    font-size: 90px;
+    font-weight: bold;
+  }
+}

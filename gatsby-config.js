@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Aide Automatisme`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Florian TELLIER`,
+      summary: `Nous sommes spécialisés dans les automatismes industriels et machines de conditionnement. Travaillons dans les secteurs Pharmaceutiques, Chimiques, Agro-alimentaires et métallurgiques du nord de la France.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
@@ -129,5 +129,6 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
     `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-sass`,
   ],
 }

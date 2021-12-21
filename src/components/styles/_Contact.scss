@@ -1,0 +1,193 @@
+.contact_container {
+  .hero {
+    padding: 0 15vw;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      font-size: 90px;
+      font-weight: bold;
+      position: relative;
+      &::after {
+        // content: "";
+        // position: absolute;
+        // width: 100%;
+        // height: 2.5px;
+        // background: $primary_color;
+        // bottom: -10%;
+        // left: 0;
+        // transform: scaleX(0);
+        // transform-origin: left;
+        // transition: 0.15s;
+        content: "";
+        position: absolute;
+        bottom: -20%;
+        left: 0;
+        width: 25%;
+        height: 13%;
+        background: $primary_color;
+        opacity: 1;
+      }
+    }
+    p {
+      width: 40%;
+    }
+  }
+  iframe {
+    width: 100%;
+    height: 40vh;
+    padding: 0 15vw;
+    border: none;
+  }
+  .contactInfo_container {
+    padding: 20vh 10vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    div {
+      width: 30%;
+      text-align: center;
+      h3 {
+        padding: 10px 0;
+      }
+      span {
+        display: block;
+        padding-bottom: 5px;
+      }
+    }
+  }
+
+  .contact_section {
+    width: 100%;
+    // align-items: center;
+    // justify-content: left;
+    padding-bottom: 10vh;
+    position: relative;
+    form {
+      width: 50%;
+      margin-left: 10vw;
+      @media (max-width: 1000px) {
+        width: 90%;
+      }
+      p {
+        font-size: 2.3em;
+        position: relative;
+        margin: 5%;
+        span {
+          position: absolute;
+          left: 0;
+          top: 0;
+          transform: translate(-5%, 0%);
+          transition: 0.4s ease-out;
+          padding-left: 10px;
+          padding-right: 10px;
+          border-radius: 4px;
+          pointer-events: none;
+          //   letter-spacing: 2px;
+          background: $bg_color;
+          font-weight: 900;
+        }
+        input {
+          background: none;
+          border: none;
+          border-bottom: 3px solid $font_color;
+          // border-radius: 4px;
+          width: 90%;
+          height: 60px;
+
+          &:focus,
+          &:valid {
+            // border: none;
+            outline: none;
+            border: 3px solid $font_color;
+
+            // border-bottom: 1px solid green;
+          }
+        }
+        input:focus + label,
+        input:valid + label {
+          span {
+            background: $bg_color;
+            transform: translate(10%, -60%);
+          }
+        }
+        // input:invalid {
+        //   // border: 5px solid $second_color;
+        //   // background: rgba(77, 8, 8, 0.397);
+        //   & + label {
+        //     // span {
+        //     //   transform: translate(25%, -50%);
+        //     // }
+        //   }
+        // }
+        input[type="text"],
+        input[type="email"] {
+          font-size: 0.8em;
+          padding-left: 3%;
+          z-index: 2;
+        }
+        .message {
+          textarea {
+            width: 90%;
+            height: 200px;
+            background: $bg_color;
+            margin-top: 10%;
+            font-size: 0.8em;
+            padding: 2%;
+            border: 3px solid $font_color;
+
+            @media (max-width: 1000px) {
+              width: 90%;
+              margin-top: 60px;
+            }
+          }
+          span {
+            display: block;
+          }
+        }
+      }
+      button {
+        background: $bg_color;
+        color: $font_color;
+        padding: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border: 3px solid $font_color;
+        font-size: 1em;
+        font-weight: bold;
+        letter-spacing: 1px;
+        // margin-left: 60%;
+        margin-left: 5%;
+        margin-bottom: 2%;
+        transition: 0.4s;
+        width: 30%;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        &:hover {
+          background: $font_color;
+          color: $bg_color;
+          //   transform: scale(1.1);
+        }
+      }
+    }
+    div {
+      // background: red;
+      width: 40%;
+      height: 90%;
+      position: absolute;
+      right: 5%;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: 1000px) {
+        display: none;
+      }
+      i {
+        font-size: 20em;
+        font-weight: 900;
+      }
+    }
+  }
+}
