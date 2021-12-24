@@ -1,9 +1,11 @@
 import * as React from "react"
 import {Link} from "gatsby"
 
-// import { FaPhone } from 'react-icons/fa';
-// import { FaMapMarkedAlt } from 'react-icons/fa';
-// import { FaFacebookF } from 'react-icons/fa';
+import { FaPhone } from 'react-icons/fa';
+import { FaMapMarkedAlt } from 'react-icons/fa';
+import { FaEnvelope } from 'react-icons/fa';
+
+import LogoSvg from "../images/svg/logo.svg"
 
 const Footer = () => {
 
@@ -14,7 +16,7 @@ const Footer = () => {
         <h3>à propos</h3>
         <hr />
         <Link to="/">
-        <h2>Aide Automatisme</h2>
+            <img src={LogoSvg} alt="Logo aide automatisme"/>
         </Link>
         <p>
             Nous sommes spécialisés dans les automatismes industriels et machines de conditionnement. Nous sommes spécialisés.
@@ -26,19 +28,19 @@ const Footer = () => {
         <div className="linksContainer">
             <Link to="https://goo.gl/maps/U9ucoSUHqDi7G7QAA" >
             <div>
-                {/* <FaMapMarkedAlt /> */}
+                <FaMapMarkedAlt />
                 <span>6 Avenue Archimède ZAC du Bois de la Chocque, 02100 Saint Quentin</span>
             </div>
             </Link>
 
             <div>
-                {/* <FaPhone /> */}
+                <FaPhone />
                 <span>Tel: (+33) 6 65 55 52 96</span>
             </div>
 
             <Link to="https://fr-fr.facebook.com/pechetellier">
             <div>
-                {/* <FaFacebookF /> */}
+                <FaEnvelope />
                 <span>info@aide-automatisme.com</span>
             </div>
             </Link>

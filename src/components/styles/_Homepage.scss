@@ -27,6 +27,8 @@ header {
       font-size: 70px;
       margin: 0;
       line-height: 70px;
+      margin-bottom: 30px;
+
       // font-weight: 100;
     }
     p {
@@ -35,8 +37,8 @@ header {
       transform: translateX(-50%);
       margin: 20px 0;
       margin-left: 50%;
-      margin-bottom: 50px;
-      letter-spacing: 2px;
+      margin-bottom: 60px;
+      letter-spacing: 1px;
     }
   }
   .logo_partenaires {
@@ -155,6 +157,11 @@ section {
         padding: 8vh 0;
       }
     }
+    .img_container {
+      img {
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -198,8 +205,15 @@ section {
   }
   svg {
     display: block;
-    min-width: 300px;
-    width: 100%;
+    min-width: 600px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    // width: 100%;
+    @media (max-width: 600px) {
+      min-width: 300px;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
     path {
       animation: svg 11s;
       // fill: rgba(255, 0, 0, 0);
@@ -212,29 +226,35 @@ section {
   }
   .aide {
     path {
-      stroke-dasharray: 1888.2454833984375px;
-      stroke-dashoffset: 1888.2454833984375px;
+      stroke-dasharray: 2626.02978515625px;
+      stroke-dashoffset: 2626.02978515625px;
+      // stroke-dasharray: 1888.2454833984375px;
+      // stroke-dashoffset: 1888.2454833984375px;
     }
   }
   .automatisme {
+    margin-top: 30px;
+    @media (max-width: 600px) {
+      margin-top: -30px;
+    }
     path {
-      animation: svg 4s;
+      animation: svg 3s;
       animation-fill-mode: forwards;
 
-      stroke-dasharray: 478px;
-      stroke-dashoffset: 478px;
-      &:nth-child(6) {
-        stroke-dasharray: 690px;
-        stroke-dashoffset: 690px;
-        animation: svg 3s;
-        animation-fill-mode: forwards;
-      }
-      &:nth-child(11) {
-        stroke-dasharray: 690px;
-        stroke-dashoffset: 690px;
-        animation: svg 3s;
-        animation-fill-mode: forwards;
-      }
+      stroke-dasharray: 296px;
+      stroke-dashoffset: 296px;
+      // &:nth-child(6) {
+      //   stroke-dasharray: 690px;
+      //   stroke-dashoffset: 690px;
+      //   animation: svg 3s;
+      //   animation-fill-mode: forwards;
+      // }
+      // &:nth-child(11) {
+      //   stroke-dasharray: 690px;
+      //   stroke-dashoffset: 690px;
+      //   animation: svg 3s;
+      //   animation-fill-mode: forwards;
+      // }
     }
   }
 }

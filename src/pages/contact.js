@@ -4,6 +4,12 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+import { FaPhone } from 'react-icons/fa';
+import { FaMapMarkedAlt } from 'react-icons/fa';
+import { FaEnvelope } from 'react-icons/fa';
+
+import ContactSvg from "../images/svg/contact.svg"
+
 const Contact = () => {
 
   return (
@@ -22,13 +28,13 @@ const Contact = () => {
 
           <div className="contactInfo_container">
             <div>
-              {/* icone  */}
+              <FaPhone />
               <h3>Téléphone</h3>
               <a>Tel: (+33) 6 65 55 52 96</a>
             </div>
 
             <div>
-              {/* icone  */}
+              <FaMapMarkedAlt />
               <h3>Adresse</h3>
               <a>
                 <span>6 Avenue Archimède</span>
@@ -38,7 +44,7 @@ const Contact = () => {
             </div>
 
             <div>
-              {/* icone  */}
+            <FaEnvelope />
               <h3>Email</h3>
               <a href="mailto:info@aide-automatisme.com">info@aide-automatisme.com</a>
             </div>
@@ -60,10 +66,9 @@ const Contact = () => {
               <button type="submit">Envoyer</button>
           </form>
 
-          {/* <div>
-          //! ici mettre l'illustration 
-            <i class="far fa-envelope"></i>
-          </div> */}
+          <div>
+            <img src={ContactSvg} alt="contact illustration"/>
+          </div>
         </div>
 
       </div>

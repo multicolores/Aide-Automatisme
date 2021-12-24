@@ -6,7 +6,8 @@
 
 footer {
   width: 100%;
-  // height: 35vh;
+  height: 40vh;
+  // height: 300px;
   padding: 0 10vw;
   background: $bg_color2;
   display: flex;
@@ -26,25 +27,31 @@ footer {
   }
   h3 {
     text-transform: uppercase;
-    padding-top: 2vh;
+    // padding-top: 2vh;
+    // margin-top: 2vh;
   }
   & > div {
     width: 30%;
-    height: 35vh;
+    // height: 30vh;
+    // height: 100%;
+    height: 80%;
+
     // padding: 2vh 0;
     min-width: 300px;
     @media (max-width: 350px) {
       min-width: 80vw;
     }
     hr {
-      background: $font_color;
+      background: $bg_color;
+      color: $bg_color;
+      margin: 1vh 0;
     }
   }
   .a_propos {
-    h2 {
-      // font-family: "Revue";
-      font-size: 1.7em;
-      // color: $primary_color;
+    img {
+      width: 50%;
+      color: white;
+      filter: invert(100%);
     }
     p {
       padding-top: 5%;
@@ -63,14 +70,16 @@ footer {
         align-items: center;
         height: 20%;
         width: 100%;
+        padding-bottom: 1vh;
         svg {
-          font-size: 1.5em;
+          font-size: 1.8em;
           width: 20%;
           margin-top: 0%;
         }
         span {
-          width: 70%;
-          font-family: "Forum";
+          width: 80%;
+          font-size: 0.9em;
+          // font-family: "Forum";
         }
       }
     }
@@ -106,6 +115,9 @@ footer {
       }
     }
   }
+  svg {
+    color: white;
+  }
 }
 .droits_reserves {
   width: 100%;
@@ -115,6 +127,7 @@ footer {
 
   p {
     font-size: 16px;
+    transform: translateY(-5vh);
     color: $bgfont_color2;
   }
 }

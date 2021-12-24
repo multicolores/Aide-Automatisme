@@ -56,6 +56,9 @@
         display: block;
         padding-bottom: 5px;
       }
+      svg {
+        font-size: 2.5em;
+      }
     }
   }
 
@@ -67,7 +70,7 @@
     position: relative;
     form {
       width: 50%;
-      margin-left: 10vw;
+      margin-left: 7vw;
       @media (max-width: 1000px) {
         width: 90%;
       }
@@ -174,7 +177,7 @@
     div {
       // background: red;
       width: 40%;
-      height: 90%;
+      height: 70%;
       position: absolute;
       right: 5%;
       top: 0;
@@ -184,9 +187,8 @@
       @media (max-width: 1000px) {
         display: none;
       }
-      i {
-        font-size: 20em;
-        font-weight: 900;
+      img {
+        width: 100%;
       }
     }
   }
