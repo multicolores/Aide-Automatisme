@@ -29,10 +29,31 @@
         height: 13%;
         background: $primary_color;
         opacity: 1;
+
+        animation: afteranim 0.5s;
+        animation-delay: 0.4s;
+        animation-fill-mode: backwards;
+        @keyframes afteranim {
+          from {
+            width: 0%;
+          }
+        }
       }
+      animation: textanimh1 0.7s;
+      animation-delay: 0.2s;
+      animation-fill-mode: backwards;
     }
     p {
       width: 40%;
+      animation: textanimh1 0.7s;
+      animation-delay: 0.4s;
+      animation-fill-mode: backwards;
+    }
+    @keyframes textanimh1 {
+      from {
+        opacity: 0;
+        transform: translateY(20%);
+      }
     }
   }
   iframe {

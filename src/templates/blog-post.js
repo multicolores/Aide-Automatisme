@@ -26,14 +26,15 @@ const BlogPostTemplate = ({ data, location }) => {
       </article>
       <div className="blog-post-nav">
             {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
+              <Link to={previous.fields.slug}  className="littleButton">
+                ← Post précédant : {previous.frontmatter.title}
               </Link>
+
             )}
 
             {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
+                <Link to={next.fields.slug} className="littleButton">
+                Post suivant : {next.frontmatter.title} →
               </Link>
             )}
       </div>
