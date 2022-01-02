@@ -25,12 +25,16 @@ const BlogPostTemplate = ({ data, location }) => {
         <hr />
       </article>
       <div className="blog-post-nav">
-            {previous && (
+            {/* {previous && (
               <Link to={previous.fields.slug}  className="littleButton">
                 ← Post précédant : {previous.frontmatter.title}
               </Link>
 
-            )}
+            )} */}
+            {previous ? 
+              <Link to={previous.fields.slug}  className="littleButton">
+                ← Post précédant : {previous.frontmatter.title}
+              </Link> :  <span></span> }
 
             {next && (
                 <Link to={next.fields.slug} className="littleButton">
