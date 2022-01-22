@@ -10,8 +10,9 @@ const Navbar = () => {
     <nav>
         <div>
           <Link to="/" className="logo"><img src={LogoSvg} alt="Logo aide automatisme"/></Link>
+          <Link to="/" className="mobileVersion"><Image filename={"iconMobile.png"} alt="Logo aide automatisme mobile"/></Link>
         </div>
-        <div>
+        <div className="links">
           <Link to="/prestations" activeClassName="active">Prestation</Link>
           <Link to="/blog" activeClassName="active">Blog</Link>
           <Link to="/contact" activeClassName="active">Contact</Link>

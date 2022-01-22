@@ -29,12 +29,12 @@
   box-sizing: border-box;
 }
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 body {
   // font-family: "Forum", cursive;
   font-family: "Montserrat", sans-serif;
-  overflow-x: hidden;
   position: relative;
 }
 
@@ -200,3 +200,29 @@ p {
 //  button:hover {
 //   color: #111;
 //  }
+
+//! 404 page
+
+.container404page {
+  height: 100vh;
+  width: 60vw;
+  margin-left: 50%;
+  transform: translate(-50%);
+  .img_container {
+    width: 70%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding-top: 10vh;
+    img {
+      width: 100%;
+    }
+  }
+  h2 {
+    padding: 10px;
+  }
+  a {
+    display: inline-block;
+    margin-left: 50%;
+    transform: translate(-50%, 20px);
+  }
+}

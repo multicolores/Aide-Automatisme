@@ -1,9 +1,3 @@
-// $bg_color: white;
-// $font_color: #000000;
-// $font_color2: #000000bd;
-// $primary_color: #3282b8;
-// // $second_color: #00539c;
-
 footer {
   width: 100%;
   height: 40vh;
@@ -15,6 +9,9 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   color: $bgfont_color1;
+  @media (max-width: 1000px) {
+    height: auto;
+  }
   p,
   span {
     color: $bgfont_color1 !important;
@@ -38,8 +35,8 @@ footer {
 
     // padding: 2vh 0;
     min-width: 300px;
-    @media (max-width: 350px) {
-      min-width: 80vw;
+    @media (max-width: 1000px) {
+      padding: 3vh 0;
     }
     hr {
       background: $bg_color;
@@ -124,10 +121,15 @@ footer {
   text-align: center;
   background: $bg_color2;
   // padding: 3vh 0;
-
+  @media (max-width: 1000px) {
+    padding: 3vh 0;
+  }
   p {
     font-size: 16px;
     transform: translateY(-5vh);
     color: $bgfont_color2;
+    @media (max-width: 1000px) {
+      transform: translateY(0vh);
+    }
   }
 }

@@ -11,16 +11,6 @@
       font-weight: bold;
       position: relative;
       &::after {
-        // content: "";
-        // position: absolute;
-        // width: 100%;
-        // height: 2.5px;
-        // background: $primary_color;
-        // bottom: -10%;
-        // left: 0;
-        // transform: scaleX(0);
-        // transform-origin: left;
-        // transition: 0.15s;
         content: "";
         position: absolute;
         bottom: -20%;
@@ -29,7 +19,6 @@
         height: 10%;
         background: $primary_color;
         opacity: 1;
-
         animation: afteranim 0.5s;
         animation-delay: 0.4s;
         animation-fill-mode: backwards;
@@ -39,14 +28,12 @@
           }
         }
       }
-
       animation: textanimh1 0.7s;
       animation-delay: 0.2s;
       animation-fill-mode: backwards;
     }
     p {
       width: 40%;
-
       animation: textanimh1 0.7s;
       animation-delay: 0.4s;
       animation-fill-mode: backwards;
@@ -57,10 +44,37 @@
         transform: translateY(20%);
       }
     }
+    @media (max-width: 1100px) {
+      height: auto;
+      flex-wrap: wrap;
+      h1 {
+        padding-top: 5vh;
+      }
+      p {
+        width: 80%;
+        padding: 5vh 0;
+      }
+    }
+    @media (max-width: 620px) {
+      padding: 0 10vw;
+      h1 {
+        padding-top: 10vh;
+        font-size: 15vw;
+        &::after {
+          width: 35%;
+        }
+      }
+      p {
+        width: 100%;
+      }
+    }
   }
   .big_image_container {
     padding: 0 10vw;
     height: 60vh;
+    @media (max-width: 620px) {
+      padding: 0;
+    }
     .image {
       height: 100%;
     }
@@ -76,6 +90,20 @@
       width: 45%;
       h2 {
         padding-bottom: 5%;
+      }
+    }
+    @media (max-width: 900px) {
+      justify-content: center;
+      div {
+        width: 85%;
+      }
+    }
+    @media (max-width: 460px) {
+      div {
+        width: 100%;
+        h2 {
+          padding-bottom: 10%;
+        }
       }
     }
   }

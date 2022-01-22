@@ -202,6 +202,7 @@ section {
     gap: 20px;
     justify-content: center;
     height: auto;
+    padding: 0vh 5vw;
     div {
       width: 100% !important;
       padding: 5vh 5vw !important;
@@ -259,6 +260,14 @@ section {
     width: 70%;
     margin-left: 50%;
     transform: translateX(-50%);
+  }
+  @media (max-width: 800px) {
+    h2 {
+      width: 100%;
+    }
+    .image {
+      width: 100%;
+    }
   }
 }
 
