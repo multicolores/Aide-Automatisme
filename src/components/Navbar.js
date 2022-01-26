@@ -13,7 +13,7 @@ const Navbar = () => {
           <Link to="/" className="mobileVersion"><Image filename={"iconMobile.png"} alt="Logo aide automatisme mobile"/></Link>
         </div>
         <div className="links">
-          <Link to="/prestations" activeClassName="active">Prestation</Link>
+          <Link to="/prestations" activeClassName="active">Prestations</Link>
           <Link to="/blog" activeClassName="active">Blog</Link>
           <Link to="/contact" activeClassName="active">Contact</Link>
         </div>

@@ -87,7 +87,7 @@ const HomePage = () => {
         <div className="text_container">
           <h2>La consultation d’avant projets</h2>
           <p>Etudes, réalisation de plans, de cahiers des charges et définition de matériels.  Maecenas sed accumsan lacus. Sed ullamcor quam sed nisl lobortis scelerisque.</p>
-          <Link to="/" className="littleButton">Nos préstations</Link>
+          <Link to="/prestations" className="littleButton">Nos préstations</Link>
         </div>
         <div className="img_container">
           <Image alt="image consultation" filename={"derouleur.jpg"} />
@@ -101,7 +101,7 @@ const HomePage = () => {
         <div className="text_container">
           <h2>La consultation d’avant projets</h2>
           <p>Etudes, réalisation de plans, de cahiers des charges et définition de matériels.  Maecenas sed accumsan lacus. Sed ullamcor quam sed nisl lobortis scelerisque.</p>
-          <Link to="/" className="littleButton">Nos préstations</Link>
+          <Link to="/prestations" className="littleButton">Nos préstations</Link>
         </div>
       </section>
 
@@ -109,7 +109,7 @@ const HomePage = () => {
         <div className="text_container">
           <h2>La consultation d’avant projets</h2>
           <p>Etudes, réalisation de plans, de cahiers des charges et définition de matériels.  Maecenas sed accumsan lacus. Sed ullamcor quam sed nisl lobortis scelerisque.</p>
-          <Link to="/" className="littleButton">Nos préstations</Link>
+          <Link to="/prestations" className="littleButton">Nos préstations</Link>
         </div>
         <div className="img_container">
           <Image alt="image consultation" filename={"derouleur.jpg"} />
@@ -122,7 +122,7 @@ const HomePage = () => {
         <div className="text_container">
           <h2>La consultation d’avant projets</h2>
           <p>Etudes, réalisation de plans, de cahiers des charges et définition de matériels.  Maecenas sed accumsan lacus. Sed ullamcor quam sed nisl lobortis scelerisque.</p>
-          <Link to="/" className="littleButton">Nos préstations</Link>
+          <Link to="/prestations" className="littleButton">Nos préstations</Link>
         </div>
       </section>
 
@@ -134,7 +134,7 @@ const HomePage = () => {
       <section className="contact">
         <div className="text_container">
           <h2>N’hésitez pas à nous contacter si vous avez un projet à nous proposer </h2>
-          <Link to="/" className="littleButton">Nous contactez</Link>
+          <Link to="/contact" className="littleButton">Nous contactez</Link>
         </div>
         <div className="img_container">
           <img src={ContactSvg} alt="contact illustration"/>

@@ -52,7 +52,7 @@ const Footer = () => {
         <h3>Informations</h3>
         <hr />
         <Link to="/" activeClassName="active">Aide Automatisme</Link> <br />
-        <Link to="/prestations" activeClassName="active">Prestation</Link> <br />
+        <Link to="/prestations" activeClassName="active">Prestations</Link> <br />
         <Link to="/blog" activeClassName="active">Blog</Link><br />
         <Link to="/contact" activeClassName="active">Contact</Link><br />
     </div>
