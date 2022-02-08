@@ -43,8 +43,13 @@
   @media (max-width: 800px) {
     padding: 0 10vw;
   }
+  @media (max-width: 500px) {
+    padding: 0 7vw;
+
+  }
   h1 {
     padding-top: 20vh;
+    padding-bottom: 1vh;
     margin: 0;
     font-size: 90px;
     font-weight: bold;
@@ -52,6 +57,12 @@
       font-size: 15vw;
     }
   }
+  @media (max-width: 500px) {
+    p{
+      font-size: 16px;
+    }
+  }
+
   hr {
     margin-top: 10vh;
   }

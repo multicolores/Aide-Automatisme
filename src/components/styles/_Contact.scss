@@ -136,6 +136,9 @@
         font-size: 2.3em;
         position: relative;
         margin: 5%;
+        @media (max-width: 500px) {
+          margin-top: 15%;
+        }
         span {
           position: absolute;
           left: 0;
@@ -172,6 +175,9 @@
           span {
             background: $bg_color;
             transform: translate(10%, -60%);
+            @media (max-width: 500px) {
+              transform: translate(10%, -65%);
+            }
           }
         }
         // input:invalid {
@@ -230,8 +236,8 @@
           color: $bg_color;
           //   transform: scale(1.1);
         }
-        @media (max-width: 550px) {
-          width: auto;
+        @media (max-width: 450px) {
+          width: 80%;
         }
       }
     }
