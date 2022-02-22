@@ -151,7 +151,7 @@
           pointer-events: none;
           //   letter-spacing: 2px;
           background: $bg_color;
-          font-weight: 900;
+          font-weight: 800;
         }
         input {
           background: none;
@@ -217,6 +217,7 @@
       }
       button {
         background: $bg_color;
+        cursor: pointer;
         color: $font_color;
         padding: 40px;
         padding-top: 20px;

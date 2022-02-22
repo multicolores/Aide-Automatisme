@@ -5,10 +5,11 @@ module.exports = {
       name: `Florian TELLIER`,
       summary: `Nous sommes spécialisés dans les automatismes industriels et machines de conditionnement. Travaillons dans les secteurs Pharmaceutiques, Chimiques, Agro-alimentaires et métallurgiques du nord de la France.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `Nous sommes spécialisés dans les automatismes industriels et machines de conditionnement. Travaillons dans les secteurs Pharmaceutiques, Chimiques, Agro-alimentaires et métallurgiques du nord de la France.`,
+    siteUrl: `https://aide-automatisme.netlify.app/`,
+    image: "src/images/ancienlogo.png",
     social: {
-      twitter: `kylemathews`,
+      twitter: ``,
     },
   },
   plugins: [
@@ -113,8 +114,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Aide Automatisme`,
+        short_name: `Aide Automatisme`,
         start_url: `/`,
         background_color: `#ffffff`,
         // This will impact how browsers show your PWA/website
